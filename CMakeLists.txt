@@ -8,16 +8,16 @@ include_directories(D:/playground/glfw-3.3/include D:/playground/glad/include D:
 # ref: https://learnopengl-cn.github.io/01%20Getting%20started/02%20Creating%20a%20window/#glfw
 # glfw3: https://www.glfw.org/download.html
 # glad: https://glad.dav1d.de/
+# imgui: https://github.com/ocornut/imgui
 
 link_libraries(opengl32.dll)
 # windows default lib
 
 link_directories(D:/playground/glfw-3.3/lib-mingw-w64)
-# glfw3, same as above
+# glfw3(same as above)
 
 aux_source_directory(. DIR_SRCS)
-# copy those dependencies from imgui
-# dear imgui: https://github.com/ocornut/imgui
+# copy those dependencies from imgui(same as above)
 
 add_executable(imgui_dojo ${DIR_SRCS})
 
