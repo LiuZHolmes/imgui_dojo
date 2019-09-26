@@ -17,7 +17,7 @@ link_directories(D:/playground/glfw-3.3/lib-mingw-w64)
 # glfw3(same as above)
 
 aux_source_directory(. DIR_SRCS)
-# copy those dependencies from imgui(same as above)
+# For those dependencies in same directory with main.cpp, they are all from dependencies above. You can simply copy them to here.
 
 add_executable(imgui_dojo ${DIR_SRCS})
 
